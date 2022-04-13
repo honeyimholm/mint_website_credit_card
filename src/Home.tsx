@@ -329,12 +329,22 @@ const Home = (props: HomeProps) => {
           style={{
             padding: 24,
             paddingBottom: 10,
-            backgroundColor: '#151A1F',
+            backgroundColor: '#C0C0C0',
             borderRadius: 6,
           }}
         >
           {!wallet.connected ? (
-            <ConnectButton>Connect Wallet</ConnectButton>
+              <>
+              <ConnectButton>Connect Wallet</ConnectButton>
+              <div style={{marginTop: 10}}/>
+                <CrossmintPayButton
+                  collectionTitle="Snub City "
+                  collectionDescription="6,000 hand crafted, algorithmically arranged nft’s illustrating Snubby’s journey of settling into the big city and his newfound urban lifestyle"
+                  collectionPhoto="https://imgur.com/ZjHwSvE"
+                  clientId="a0907a0f-2e18-414c-9eb6-f360a51d3493"
+                  className='crossmint-button'
+                />
+              </>
           ) : (
             <>
               {candyMachine && (
@@ -509,7 +519,6 @@ const Home = (props: HomeProps) => {
                     broadcastTransaction={false}
                     options={{ autoShowModal: false }}
                   >
-                  <>
                     <MintButton
                       candyMachine={candyMachine}
                       isMinting={isUserMinting}
@@ -525,9 +534,9 @@ const Home = (props: HomeProps) => {
                       clientId="a0907a0f-2e18-414c-9eb6-f360a51d3493"
                       className='crossmint-button'
                     />
-                  </>
                   </GatewayProvider>
                 ) : (
+                <>
                   <MintButton
                     candyMachine={candyMachine}
                     isMinting={isUserMinting}
@@ -535,6 +544,15 @@ const Home = (props: HomeProps) => {
                     onMint={onMint}
                     isActive={isActive || (isPresale && isWhitelistUser)}
                   />
+                  <div style={{marginTop: 10}}/>
+                    <CrossmintPayButton
+                      collectionTitle="Snub City "
+                      collectionDescription="6,000 hand crafted, algorithmically arranged nft’s illustrating Snubby’s journey of settling into the big city and his newfound urban lifestyle"
+                      collectionPhoto="https://imgur.com/ZjHwSvE"
+                      clientId="a0907a0f-2e18-414c-9eb6-f360a51d3493"
+                      className='crossmint-button'
+                    />
+                </>
                 )}
               </MintContainer>
             </>
@@ -545,7 +563,6 @@ const Home = (props: HomeProps) => {
             display="block"
             style={{ marginTop: 7, color: 'grey' }}
           >
-            Powered by METAPLEX
           </Typography>
         </Paper>
       </Container>
@@ -560,7 +577,7 @@ const Home = (props: HomeProps) => {
         >
           <h3>Frequently Asked Questions</h3>
           <h5>What is this page?</h5>
-          <small>You can mint your Snub here! If you plan to mint with Solana we recommend https://phantom.app/.</small>
+          <small>You can mint your Snub here! If you plan to mint with Solana we recommend https://phantom.app/. You can also buy with credit card (powered by Stripe and Crossmint) which will create a wallet for you and send you the passphrases for it.</small>
 
         </Paper>
       </Container>
