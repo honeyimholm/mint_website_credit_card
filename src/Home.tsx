@@ -343,7 +343,7 @@ const Home = (props: HomeProps) => {
                   justifyContent="center"
                   wrap="nowrap"
                 >
-                  <Grid item xs={3}>
+                  {/* <Grid item xs={3}>
                     <Typography variant="body2" color="textSecondary">
                       Remaining
                     </Typography>
@@ -356,7 +356,7 @@ const Home = (props: HomeProps) => {
                     >
                       {`${itemsRemaining}`}
                     </Typography>
-                  </Grid>
+                  </Grid> */}
                   <Grid item xs={4}>
                     <Typography variant="body2" color="textSecondary">
                       {isWhitelistUser && discountPrice
@@ -538,7 +538,21 @@ const Home = (props: HomeProps) => {
           </Typography>
         </Paper>
       </Container>
+      <Container maxWidth="xs" style={{ position: 'relative', marginTop: "1em" }}>
+        <Paper
+          style={{
+            padding: 24,
+            paddingTop: 10,
+            backgroundColor: '#151A1F',
+            borderRadius: 6,
+          }}
+        >
+          <h3>Frequently Asked Questions</h3>
+          <h5>What is this page?</h5>
+          <small>You can mint your Snub here! If you plan to mint with Solana we recommend https://phantom.app/.</small>
 
+        </Paper>
+      </Container>
       <Snackbar
         open={alertState.open}
         autoHideDuration={alertState.noHide ? null : 6000}
