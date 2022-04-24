@@ -341,7 +341,7 @@ const Home = (props: HomeProps) => {
                   collectionTitle="Snub City "
                   collectionDescription="6,000 hand crafted, algorithmically arranged nft’s illustrating Snubby’s journey of settling into the big city and his newfound urban lifestyle"
                   collectionPhoto="https://imgur.com/ZjHwSvE"
-                  clientId="a0907a0f-2e18-414c-9eb6-f360a51d3493"
+                  clientId="1547d5fd-be48-46f5-af13-9529c05a679f"
                   className='crossmint-button'
                 />
               </>
@@ -577,7 +577,7 @@ const Home = (props: HomeProps) => {
         >
           <h3>Frequently Asked Questions</h3>
           <h5>What is this page?</h5>
-          <small>You can mint your Snub here! If you plan to mint with Solana we recommend https://phantom.app/. You can also buy with credit card (powered by Stripe and Crossmint) which will create a wallet for you and send you the passphrases for it.</small>
+          <small>Welcome CryptoTraders - you can mint your Snub here! If you plan to mint with Solana we recommend https://phantom.app/. You can also buy with credit card (powered by Stripe and Crossmint) which will create a wallet for you and send you the passphrases for it.</small>
 
         </Paper>
       </Container>
