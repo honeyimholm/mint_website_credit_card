@@ -341,7 +341,7 @@ const Home = (props: HomeProps) => {
                   collectionTitle="Snub City "
                   collectionDescription="6,000 hand crafted, algorithmically arranged nft’s illustrating Snubby’s journey of settling into the big city and his newfound urban lifestyle"
                   collectionPhoto="https://imgur.com/ZjHwSvE"
-                  clientId="1547d5fd-be48-46f5-af13-9529c05a679f"
+                  clientId="2e57d611-4bf3-4cdb-bfae-688206515d16"
                   className='crossmint-button'
                 />
               </>
@@ -354,7 +354,7 @@ const Home = (props: HomeProps) => {
                   justifyContent="center"
                   wrap="nowrap"
                 >
-                  {/* <Grid item xs={3}>
+                  { <Grid item xs={3}>
                     <Typography variant="body2" color="textSecondary">
                       Remaining
                     </Typography>
@@ -367,7 +367,7 @@ const Home = (props: HomeProps) => {
                     >
                       {`${itemsRemaining}`}
                     </Typography>
-                  </Grid> */}
+                  </Grid> }
                   <Grid item xs={4}>
                     <Typography variant="body2" color="textSecondary">
                       {isWhitelistUser && discountPrice
@@ -531,7 +531,7 @@ const Home = (props: HomeProps) => {
                       collectionTitle="Snub City "
                       collectionDescription="6,000 hand crafted, algorithmically arranged nft’s illustrating Snubby’s journey of settling into the big city and his newfound urban lifestyle"
                       collectionPhoto="https://imgur.com/ZjHwSvE"
-                      clientId="a0907a0f-2e18-414c-9eb6-f360a51d3493"
+                      clientId="2e57d611-4bf3-4cdb-bfae-688206515d16"
                       className='crossmint-button'
                     />
                   </GatewayProvider>
@@ -549,7 +549,7 @@ const Home = (props: HomeProps) => {
                       collectionTitle="Snub City "
                       collectionDescription="6,000 hand crafted, algorithmically arranged nft’s illustrating Snubby’s journey of settling into the big city and his newfound urban lifestyle"
                       collectionPhoto="https://imgur.com/ZjHwSvE"
-                      clientId="a0907a0f-2e18-414c-9eb6-f360a51d3493"
+                      clientId="2e57d611-4bf3-4cdb-bfae-688206515d16"
                       className='crossmint-button'
                     />
                 </>
